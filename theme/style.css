@@ -1,0 +1,54 @@
+/* optimisation css. Tout en rem 5/20 */
+
+*,
+ ::before,
+ ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+.container {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 3.125rem;
+}
+
+.slider img {
+    max-width: 100%;
+    display: none;
+}
+
+img.active {
+    display: block;
+    animation: fade 0.8s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cont-btn {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+    box-shadow: .625rem .625rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.btn-nav {
+    font-size: 3.125rem;
+    margin: 0 .9375rem;
+    cursor: pointer;
+}
